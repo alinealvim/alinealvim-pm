@@ -1,0 +1,25 @@
+:root {
+  --color-champagne: #F6EDE2;
+  --color-sand: #F2E9DD;
+  --color-steel: #2F4858;
+  --color-terracotta: #D38C7A;
+  --color-lilac: #C4B7D3;
+  --color-sage: #B7C1B0;
+  --font-sans: 'Inter', sans-serif;
+  --section-padding: 80px;
+  --max-width: 1200px;
+  --card-radius: 12px;
+  --btn-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-champagne);
+  color: var(--color-steel);
+}
