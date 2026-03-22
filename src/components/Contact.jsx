@@ -45,15 +45,15 @@ function Contact() {
           {"I'm always open to new projects, collaborations, or just a good conversation about product and design. Feel free to reach out."}
         </p>
 
-        <a href="mailto:alinealvim90@gmail.com" style={btnStyle}>
+        <a href="mailto:hello@alinealvim.com" className="btn-primary">
           Say Hello
         </a>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '32px', marginTop: '16px' }}>
-          <a href="https://linkedin.com/in/alvimaline" target="_blank" rel="noreferrer" style={linkStyle}>
+          <a href="https://linkedin.com/in/alvimaline" target="_blank" rel="noreferrer" className="nav-link">
             LinkedIn
           </a>
-          <a href="https://github.com/alinealvim" target="_blank" rel="noreferrer" style={linkStyle}>
+          <a href="https://github.com/alinealvim" target="_blank" rel="noreferrer" className="nav-link">
             GitHub
           </a>
         </div>

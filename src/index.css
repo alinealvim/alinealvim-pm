@@ -23,3 +23,52 @@ body {
   background-color: var(--color-champagne);
   color: var(--color-steel);
 }
+
+
+.btn-primary {
+  background-color: var(--color-terracotta);
+  color: #fff;
+  border: none;
+  border-radius: var(--btn-radius);
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #B8735F;
+}
+
+.btn-secondary {
+  background: none;
+  border: 1px solid var(--color-terracotta);
+  color: var(--color-terracotta);
+  border-radius: var(--btn-radius);
+  padding: 10px 24px;
+  font-size: 15px;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-terracotta);
+  color: #fff;
+}
+
+.nav-link {
+  font-size: 15px;
+  color: var(--color-steel);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-terracotta);
+}

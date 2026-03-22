@@ -1,15 +1,12 @@
 function CaseTalita({ onBack }) {
-  const imgPlaceholder = {
-    backgroundColor: 'var(--color-sage)',
-    borderRadius: 'var(--card-radius)',
+  const imgStyle = (objectFit = 'cover') => ({
     width: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    color: '#fff',
-    fontSize: '14px',
-    fontWeight: '500',
-  }
+    height: 'auto',
+    objectFit,
+    borderRadius: 'var(--card-radius)',
+    marginBottom: '48px',
+    display: 'block',
+  })
 
   return (
     <section style={{
@@ -19,20 +16,10 @@ function CaseTalita({ onBack }) {
     }}>
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
 
-        <button
-          onClick={onBack}
-          style={{
-            background: 'none',
-            border: 'none',
-            color: 'var(--color-terracotta)',
-            fontSize: '15px',
-            cursor: 'pointer',
-            marginBottom: '40px',
-            padding: 0,
-            fontFamily: 'var(--font-sans)',
-          }}
-        >
-          ← Back
+        <button onClick={onBack} 
+          className="btn-secondary" 
+          style={{ marginBottom: '40px' }}>
+            ← Back
         </button>
 
         <span style={{
@@ -56,9 +43,7 @@ function CaseTalita({ onBack }) {
           Talita Santos — Brand Strategy & Visual Identity
         </h1>
 
-        <div style={{ ...imgPlaceholder, height: '360px', marginBottom: '60px' }}>
-          Image — Brand mockup
-        </div>
+        <img src="/images/talita/01-cover.jpg" alt="Talita Santos Instagram mockup" style={imgStyle()} />
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Overview</h2>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '48px' }}>
@@ -79,14 +64,9 @@ function CaseTalita({ onBack }) {
         <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Defining the user</h3>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '32px' }}>
           Before any visual decisions, I focused on who the target audience actually was.
-          Through market reasoning and research data from a 2023 Portuguese social media
-          behaviour report, I identified women aged 30–50, middle class, with higher education,
-          as the primary audience.
+          Through market reasoning and supporting research, I identified women aged 30–50,
+          middle class, with higher education, as the primary audience.
         </p>
-
-        <div style={{ ...imgPlaceholder, height: '280px', marginBottom: '32px' }}>
-          Image — SWOT analysis
-        </div>
 
         <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Strategic analysis</h3>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '32px' }}>
@@ -97,55 +77,30 @@ function CaseTalita({ onBack }) {
 
         <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Visual identity</h3>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '32px' }}>
-          I identified a potential tension between the luxury positioning the client wanted
-          and the middle-class audience the brand was actually targeting. I proposed a
-          terracotta alternative. The client chose to maintain her original vision — I
-          respected that and delivered the strongest possible execution within her direction.
+          With the strategic foundation in place, I translated the brand positioning
+          into a complete visual identity system. The process involved exploring colour
+          directions aligned with the target audience and the brand values — presenting
+          alternatives, discussing trade-offs, and refining based on the client's vision.
+          The final result reflects a deliberate aesthetic choice that the client owns
+          and applies consistently across her consulting work.
         </p>
 
-        <div style={{ ...imgPlaceholder, height: '280px', marginBottom: '32px' }}>
-          Image — Brand board
-        </div>
-
-        <div style={{ ...imgPlaceholder, height: '280px', marginBottom: '48px' }}>
-          Image — Logo variations
-        </div>
+        <img src="/images/talita/02-brandboard.jpg" alt="Talita Santos brand board" style={imgStyle('contain')} />
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>What was delivered</h2>
         <ul style={{ fontSize: '17px', lineHeight: '2', color: 'var(--color-steel)', marginBottom: '48px', paddingLeft: '24px' }}>
-          <li>Target audience definition with supporting research</li>
-          <li>Social media behaviour analysis (Portuguese market, 2023)</li>
+          <li>Target audience definition and market research</li>
           <li>SWOT analysis</li>
           <li>Business plan with market and competitive analysis</li>
           <li>Complete visual identity: logo suite, colour palette, typography, brand board</li>
           <li>Brand application manual</li>
         </ul>
 
-        <div style={{ ...imgPlaceholder, height: '280px', marginBottom: '48px' }}>
-          Image — Consulting report (applied by client)
-        </div>
+        <img src="/images/talita/03-report-kibbe.jpg" alt="Consulting report — Kibbe body type" style={imgStyle()} />
+        <img src="/images/talita/04-report-guidelines.jpg" alt="Consulting report — style guidelines" style={imgStyle()} />
+        <img src="/images/talita/05-report-final.jpg" alt="Talita Santos consulting report" style={imgStyle('contain')} />
 
-        <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>{"What I'd do differently"}</h2>
-        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '48px' }}>
-          The audience research focused primarily on social media behaviour. If I were doing
-          this today, I would go deeper into consumption habits — how this audience makes
-          purchasing decisions for services, what triggers conversion, what creates trust
-          in a service provider.
-        </p>
-
-        <button
-          onClick={onBack}
-          style={{
-            background: 'none',
-            border: '1px solid var(--color-terracotta)',
-            color: 'var(--color-terracotta)',
-            fontSize: '15px',
-            cursor: 'pointer',
-            padding: '10px 24px',
-            borderRadius: 'var(--btn-radius)',
-            fontFamily: 'var(--font-sans)',
-          }}
-        >
+        <button onClick={onBack} className="btn-secondary" style={{ marginTop: '16px' }}>
           ← Back to Work
         </button>
 

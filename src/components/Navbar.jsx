@@ -13,18 +13,14 @@ function Navbar() {
       justifyContent: 'space-between',
       alignItems: 'center',
     }}>
-      <span style={{
-        fontSize: '16px',
-        fontWeight: '500',
-        color: 'var(--color-steel)',
-      }}>
+      <a href="#" className="nav-link" style={{ fontSize: '16px', fontWeight: '500' }}>
         Aline Alvim
-      </span>
+      </a>
 
       <div style={{ display: 'flex', gap: '32px' }}>
-        <a href="#about" style={{ fontSize: '15px', color: 'var(--color-steel)', textDecoration: 'none' }}>About</a>
-        <a href="#work" style={{ fontSize: '15px', color: 'var(--color-steel)', textDecoration: 'none' }}>Work</a>
-        <a href="#contact" style={{ fontSize: '15px', color: 'var(--color-steel)', textDecoration: 'none' }}>Contact</a>
+        <a href="#about" className="nav-link">About</a>
+        <a href="#work" className="nav-link">Work</a>
+        <a href="#contact" className="nav-link">Contact</a>
       </div>
     </nav>
   )

@@ -1,5 +1,6 @@
 import CaseTalita from './CaseTalita'
 import CaseBookShelf from './CaseBookShelf'
+import CaseCroma from './CaseCroma'
 
 function Work({ activePage, setActivePage }) {
   const cases = [
@@ -25,7 +26,8 @@ function Work({ activePage, setActivePage }) {
 
   if (activePage === 'talita') return <CaseTalita onBack={() => setActivePage(null)} />
   if (activePage === 'bookshelf') return <CaseBookShelf onBack={() => setActivePage(null)} />
-
+  if (activePage === 'croma') return <CaseCroma onBack={() => setActivePage(null)} />
+  
   return (
     <section id="work" style={{
       backgroundColor: 'var(--color-champagne)',
@@ -96,26 +98,14 @@ function Work({ activePage, setActivePage }) {
                 {item.description}
               </p>
 
-              {item.id !== 'croma' && (
-                <button
-                  onClick={() => setActivePage(item.id)}
-                  style={{
-                    display: 'inline-block',
-                    marginTop: '8px',
-                    padding: '10px 24px',
-                    backgroundColor: 'var(--color-terracotta)',
-                    color: '#fff',
-                    borderRadius: 'var(--btn-radius)',
-                    border: 'none',
-                    fontSize: '14px',
-                    fontWeight: '500',
-                    cursor: 'pointer',
-                    alignSelf: 'flex-start',
-                  }}
-                >
-                  View Case Study
-                </button>
-              )}
+              <button
+                onClick={() => setActivePage(item.id)}
+                className="btn-primary"
+                style={{ fontSize: '14px', padding: '10px 24px' }}
+              >
+                {item.id === 'croma' ? 'View Work' : 'View Case Study'}
+              </button>
+              
             </div>
           ))}
         </div>

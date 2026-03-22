@@ -44,20 +44,7 @@ function Hero() {
           I tell the product's story.
         </p>
 
-        <a href="#work" style={{
-          backgroundColor: 'var(--color-terracotta)',
-          color: '#fff',
-          padding: '14px 32px',
-          borderRadius: 'var(--btn-radius)',
-          textDecoration: 'none',
-          fontSize: '16px',
-          fontWeight: '500',
-          display: 'inline-block',
-          transition: 'background-color 0.2s ease',
-        }}
-          onMouseEnter={e => e.target.style.backgroundColor = 'var(--color-lilac)'}
-          onMouseLeave={e => e.target.style.backgroundColor = 'var(--color-terracotta)'}
-        >
+        <a href="#work" className="btn-primary">
           See My Work
         </a>
       </div>

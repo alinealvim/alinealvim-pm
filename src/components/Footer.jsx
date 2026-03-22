@@ -8,7 +8,7 @@ function Footer() {
     }}>
       <p style={{
         fontSize: '14px',
-        color: 'var(--color-sage)',
+        color: 'var(--color-stell)',
       }}>
         © 2026 Aline Alvim. All Rights Reserved.
       </p>

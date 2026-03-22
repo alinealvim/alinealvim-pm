@@ -19,20 +19,10 @@ function CaseBookShelf({ onBack }) {
     }}>
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
 
-        <button
-          onClick={onBack}
-          style={{
-            background: 'none',
-            border: 'none',
-            color: 'var(--color-terracotta)',
-            fontSize: '15px',
-            cursor: 'pointer',
-            marginBottom: '40px',
-            padding: 0,
-            fontFamily: 'var(--font-sans)',
-          }}
-        >
-          ← Back
+        <button onClick={onBack} 
+          className="btn-secondary" 
+          style={{ marginBottom: '40px' }}>
+            ← Back
         </button>
 
         <span style={{
@@ -134,19 +124,7 @@ function CaseBookShelf({ onBack }) {
           Stack: C#, Blazor Web App, SQL Server, Entity Framework Core, Bootstrap, Figma, Trello, GitHub
         </p>
 
-        <button
-          onClick={onBack}
-          style={{
-            background: 'none',
-            border: '1px solid var(--color-terracotta)',
-            color: 'var(--color-terracotta)',
-            fontSize: '15px',
-            cursor: 'pointer',
-            padding: '10px 24px',
-            borderRadius: 'var(--btn-radius)',
-            fontFamily: 'var(--font-sans)',
-          }}
-        >
+        <button onClick={onBack} className="btn-secondary" style={{ marginTop: '16px' }}>
           ← Back to Work
         </button>
 
