@@ -72,3 +72,19 @@ body {
 .nav-link:hover {
   color: var(--color-terracotta);
 }
+
+
+.croma-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding-bottom: 64px;
+  border-bottom: 0.5px solid var(--color-sage);
+}
+
+@media (max-width: 768px) {
+  .croma-grid {
+    grid-template-columns: 1fr;
+  }
+}

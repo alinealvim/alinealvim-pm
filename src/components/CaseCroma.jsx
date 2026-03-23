@@ -1,27 +1,31 @@
-import { useState } from 'react'
-
 function CaseCroma({ onBack }) {
   const sites = [
     {
       id: 'clinica',
-      name: 'Clinica dos Gatos',
+      name: 'Clínica dos Gatos',
       url: 'https://clinicadosgatos.pt',
-      description: 'Website for a feline veterinary clinic based in Porto. Focused on clean navigation and intuitive user experience for pet owners.',
+      description: 'Website for a veterinary clinic specialising in feline care, based in Porto.',
+      detail: 'The focus was on structuring information to support quick navigation and reduce friction for pet owners seeking services or contact details. Key decisions prioritised clarity, readability, and intuitive flow over visual complexity.',
       stack: 'HTML, CSS, JavaScript, Bootstrap',
+      videoId: 'CtgQPaGvJ1Y',
     },
     {
       id: 'moradias',
       name: 'Moradias Lifestyle',
       url: null,
-      description: 'Website for a residential real estate development project. Built to showcase properties and capture leads effectively.',
+      description: 'Website for a residential real estate development project.',
+      detail: 'The goal was to present properties in a way that supports user understanding and encourages lead generation. The structure was designed to highlight key information clearly while maintaining a visual flow aligned with the expectations of potential buyers.',
       stack: 'HTML, CSS, JavaScript, Bootstrap',
+      videoId: 'yj-pzqxM0sU',
     },
     {
       id: 'villas',
       name: 'Villas do Campo',
       url: 'https://villasdocampo.pt',
-      description: 'Website for a rural real estate development. Includes contact forms and property presentation with a focus on lifestyle.',
+      description: 'Website for a rural real estate development.',
+      detail: 'This project balanced visual presentation with functionality, supporting both property showcasing and user engagement through clear calls to action and contact flows. Backend functionality was implemented for form handling and submission.',
       stack: 'HTML, CSS, JavaScript, Bootstrap, PHP',
+      videoId: 'N-77A3Umw1U',
     },
   ]
 
@@ -64,31 +68,26 @@ function CaseCroma({ onBack }) {
           color: 'var(--color-steel)',
           marginBottom: '64px',
         }}>
-          Three websites developed during my internship and as a freelancer
-          at Croma Serviços de Publicidade, Porto.
+          Three web projects developed during my internship and freelance work
+          at Croma Serviços de Publicidade (Porto), focused on translating
+          business objectives into functional, user-friendly digital experiences.
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '64px' }}>
           {sites.map(site => (
-            <div key={site.id} style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
-              gap: '40px',
-              alignItems: 'start',
-              paddingBottom: '64px',
-              borderBottom: '0.5px solid var(--color-sage)',
-            }}>
-              <div style={{
-                backgroundColor: 'var(--color-sage)',
-                borderRadius: 'var(--card-radius)',
-                height: '280px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#fff',
-                fontSize: '14px',
-              }}>
-                Coming soon
+            <div key={site.id} className="croma-grid">
+
+              <div style={{ borderRadius: 'var(--card-radius)', overflow: 'hidden' }}>
+                <iframe
+                  width="100%"
+                  height="260"
+                  src={'https://www.youtube.com/embed/' + site.videoId + '?autoplay=1&mute=1&loop=1&playlist=' + site.videoId}
+                  title={site.name}
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  style={{ display: 'block' }}
+                />
               </div>
 
               <div>
@@ -105,9 +104,19 @@ function CaseCroma({ onBack }) {
                   fontSize: '16px',
                   lineHeight: '1.7',
                   color: 'var(--color-steel)',
-                  marginBottom: '16px',
+                  marginBottom: '12px',
                 }}>
                   {site.description}
+                </p>
+
+                <p style={{
+                  fontSize: '15px',
+                  lineHeight: '1.7',
+                  color: 'var(--color-steel)',
+                  marginBottom: '16px',
+                  opacity: 0.8,
+                }}>
+                  {site.detail}
                 </p>
 
                 <p style={{
@@ -123,6 +132,7 @@ function CaseCroma({ onBack }) {
                   <a href={site.url} target="_blank" rel="noreferrer" className="btn-secondary" style={{ fontSize: '14px', padding: '8px 20px' }}>Visit Site</a>
                 )}
               </div>
+
             </div>
           ))}
         </div>

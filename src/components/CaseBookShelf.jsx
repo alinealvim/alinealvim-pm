@@ -3,12 +3,14 @@ function CaseBookShelf({ onBack }) {
     backgroundColor: 'var(--color-sage)',
     borderRadius: 'var(--card-radius)',
     width: '100%',
+    height: '280px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     color: '#fff',
     fontSize: '14px',
     fontWeight: '500',
+    marginBottom: '48px',
   }
 
   return (
@@ -19,10 +21,8 @@ function CaseBookShelf({ onBack }) {
     }}>
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
 
-        <button onClick={onBack} 
-          className="btn-secondary" 
-          style={{ marginBottom: '40px' }}>
-            ← Back
+        <button onClick={onBack} className="btn-secondary" style={{ marginBottom: '40px' }}>
+          ← Back
         </button>
 
         <span style={{
@@ -46,78 +46,102 @@ function CaseBookShelf({ onBack }) {
           My Book Shelf — Reading Habit Tracker
         </h1>
 
-        <div style={{ ...imgPlaceholder, height: '360px', marginBottom: '60px' }}>
-          Image — App screenshot
-        </div>
+        <div style={imgPlaceholder}>Image — App screenshot</div>
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Overview</h2>
+        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
+          My Book Shelf is a web application designed to support habit formation by helping
+          users build and maintain a consistent reading routine.
+        </p>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '48px' }}>
-          My Book Shelf is a web application designed to help users build and maintain
-          a reading habit. The project was developed as the final assignment of a
-          Technical Specialist programme in Information Systems Programming at CINEL, Lisbon.
+          The project was developed as part of a Technical Specialist programme in Information
+          Systems Programming, with a focus on combining product thinking and technical execution.
         </p>
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>The challenge</h2>
-        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '48px' }}>
+        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
           Less than 50% of the Portuguese population reads at least one book per year.
-          The goal was to design and build a tool that would help people who want to
-          develop or resume a reading habit — making progress visible, trackable,
-          and motivating.
+        </p>
+        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '48px' }}>
+          The challenge was to design a product that could help users who want to read more
+          but struggle with consistency — making progress visible, reducing friction,
+          and increasing motivation over time.
         </p>
 
-        <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>The process</h2>
-        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '32px' }}>
-          The project followed Scrum methodology, organised into 5 two-week sprints.
-          Before writing a single line of code, I defined the product backlog with
-          prioritised user stories, planned the sprint structure, estimated resources,
-          and mapped a risk matrix covering timeline, technical quality, and continuity risks.
+        <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '24px' }}>Approach</h2>
+
+        <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Problem definition & product framing</h3>
+        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
+          The core problem identified was not lack of interest in reading, but lack of continuity.
+          Based on this, the product was framed around three key drivers:
         </p>
-
-        <div style={{ ...imgPlaceholder, height: '280px', marginBottom: '32px' }}>
-          Image — Trello board with sprints
-        </div>
-
-        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '32px' }}>
-          I designed the full system architecture in three layers — presentation,
-          business logic, and data — and built a Figma prototype to validate the
-          user experience before development.
-        </p>
-
-        <div style={{ ...imgPlaceholder, height: '280px', marginBottom: '48px' }}>
-          Image — Figma prototype
-        </div>
-
-        <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>What was built</h2>
-        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '24px' }}>
-          A full-stack web application in C# and Blazor, with SQL Server as the database.
-        </p>
-        <ul style={{ fontSize: '17px', lineHeight: '2', color: 'var(--color-steel)', marginBottom: '48px', paddingLeft: '24px' }}>
-          <li>Book list management with drag-and-drop status columns (To Read, Reading, Read)</li>
-          <li>Reading progress tracking with page count and dates</li>
-          <li>Data visualisation with customisable charts</li>
-          <li>Admin panel for user and book management</li>
+        <ul style={{ fontSize: '17px', lineHeight: '2', color: 'var(--color-steel)', marginBottom: '32px', paddingLeft: '24px' }}>
+          <li>visibility of progress</li>
+          <li>sense of achievement</li>
+          <li>ease of tracking</li>
         </ul>
 
-        <div style={{ ...imgPlaceholder, height: '280px', marginBottom: '48px' }}>
-          Image — App running — reading list
-        </div>
-
-        <div style={{ ...imgPlaceholder, height: '280px', marginBottom: '48px' }}>
-          Image — App running — progress charts
-        </div>
-
-        <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>{"What I'd do differently"}</h2>
+        <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Product planning</h3>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
-          The Blazor learning curve affected the initial timeline. In future projects
-          I would allocate more preparation time for new frameworks.
+          Before development, I defined the product backlog with prioritised user stories,
+          focusing on delivering core value early. The project was structured using Scrum,
+          organised into five two-week sprints, with planning that included:
         </p>
+        <ul style={{ fontSize: '17px', lineHeight: '2', color: 'var(--color-steel)', marginBottom: '32px', paddingLeft: '24px' }}>
+          <li>effort estimation</li>
+          <li>sprint scope definition</li>
+          <li>risk mapping (timeline, technical complexity, continuity)</li>
+        </ul>
+
+        <div style={imgPlaceholder}>Image — Trello board</div>
+
+        <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Solution design</h3>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
-          The absence of automated testing meant significant manual validation effort.
-          Introducing automated tests from the start would improve both speed and consistency.
+          To ensure alignment between functionality and user experience, I designed the system
+          architecture in three layers (presentation, business logic, data) and created a Figma
+          prototype to validate flows before development.
+        </p>
+        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '32px' }}>
+          Key product decisions included prioritising simplicity over feature volume and focusing
+          on core habit-building mechanics.
+        </p>
+
+        <div style={imgPlaceholder}>Image — Figma prototype</div>
+
+        <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Development</h3>
+        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
+          The application was built as a full-stack solution using C#, Blazor, and SQL Server.
+          Core features include:
+        </p>
+        <ul style={{ fontSize: '17px', lineHeight: '2', color: 'var(--color-steel)', marginBottom: '48px', paddingLeft: '24px' }}>
+          <li>book tracking with status management (To Read, Reading, Read)</li>
+          <li>reading progress tracking (pages and dates)</li>
+          <li>data visualisation through charts</li>
+          <li>admin panel for content management</li>
+        </ul>
+
+        <div style={imgPlaceholder}>Image — App running</div>
+        <div style={imgPlaceholder}>Image — Progress charts</div>
+
+        <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Outcome</h2>
+        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
+          The result is a functional product that enables users to track reading progress
+          and visualise their habits over time.
         </p>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '48px' }}>
-          The interface would also benefit from more responsiveness testing on mobile,
-          and from real user feedback sessions to validate design decisions.
+          The structure prioritises clarity and ease of use, supporting the initial goal
+          of reducing friction and reinforcing consistency.
+        </p>
+
+        <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Key learning</h2>
+        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
+          This project reinforced the importance of validating technical decisions early.
+          The learning curve with Blazor impacted initial timelines, highlighting the need
+          to account for technical uncertainty during planning.
+        </p>
+        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '48px' }}>
+          It also showed the value of incorporating automated testing and user feedback
+          earlier in the process to improve product quality and iteration speed.
         </p>
 
         <p style={{ fontSize: '14px', color: 'var(--color-sage)', marginBottom: '48px' }}>
