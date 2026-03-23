@@ -1,4 +1,6 @@
 function CaseTalita({ onBack }) {
+  const base = import.meta.env.BASE_URL
+
   const imgStyle = (objectFit = 'cover') => ({
     width: '100%',
     height: 'auto',
@@ -43,7 +45,7 @@ function CaseTalita({ onBack }) {
           Talita Santos — Brand Strategy & Visual Identity
         </h1>
 
-        <img src="/images/talita/01-cover.jpg" alt="Talita Santos Instagram mockup" style={imgStyle()} />
+        <img src={base + "images/talita/01-cover.jpg"} alt="Talita Santos Instagram mockup" style={imgStyle()} />
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Overview</h2>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '48px' }}>
@@ -85,7 +87,7 @@ function CaseTalita({ onBack }) {
           and applies consistently across her consulting work.
         </p>
 
-        <img src="/images/talita/02-brandboard.jpg" alt="Talita Santos brand board" style={imgStyle('contain')} />
+        <img src={base + "images/talita/02-brandboard.jpg"} alt="Talita Santos brand board" style={imgStyle('contain')} />
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>What was delivered</h2>
         <ul style={{ fontSize: '17px', lineHeight: '2', color: 'var(--color-steel)', marginBottom: '48px', paddingLeft: '24px' }}>
@@ -96,9 +98,9 @@ function CaseTalita({ onBack }) {
           <li>Brand application manual</li>
         </ul>
 
-        <img src="/images/talita/03-report-kibbe.jpg" alt="Consulting report — Kibbe body type" style={imgStyle()} />
-        <img src="/images/talita/04-report-guidelines.jpg" alt="Consulting report — style guidelines" style={imgStyle()} />
-        <img src="/images/talita/05-report-final.jpg" alt="Talita Santos consulting report" style={imgStyle('contain')} />
+        <img src={base + "images/talita/03-report-kibbe.jpg"} alt="Consulting report — Kibbe body type" style={imgStyle()} />
+        <img src={base + "images/talita/04-report-guidelines.jpg"} alt="Consulting report — style guidelines" style={imgStyle()} />
+        <img src={base + "images/talita/05-report-final.jpg"} alt="Talita Santos consulting report" style={imgStyle('contain')} />
 
         <button onClick={onBack} className="btn-secondary" style={{ marginTop: '16px' }}>
           ← Back to Work
