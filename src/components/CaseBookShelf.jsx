@@ -1,17 +1,14 @@
 function CaseBookShelf({ onBack }) {
-  const imgPlaceholder = {
-    backgroundColor: 'var(--color-sage)',
-    borderRadius: 'var(--card-radius)',
+  const base = import.meta.env.BASE_URL
+
+  const imgStyle = (objectFit = 'contain') => ({
     width: '100%',
-    height: '280px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    color: '#fff',
-    fontSize: '14px',
-    fontWeight: '500',
+    height: 'auto',
+    objectFit,
+    borderRadius: 'var(--card-radius)',
     marginBottom: '48px',
-  }
+    display: 'block',
+  })
 
   return (
     <section style={{
@@ -46,7 +43,7 @@ function CaseBookShelf({ onBack }) {
           My Book Shelf — Reading Habit Tracker
         </h1>
 
-        <div style={imgPlaceholder}>Image — App screenshot</div>
+        <img src={base + 'images/bookshelf/01-app-screenshot.png'} alt="App screenshot" style={imgStyle()} />
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Overview</h2>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
@@ -93,7 +90,7 @@ function CaseBookShelf({ onBack }) {
           <li>risk mapping (timeline, technical complexity, continuity)</li>
         </ul>
 
-        <div style={imgPlaceholder}>Image — Trello board</div>
+        <img src={base + 'images/bookshelf/02-trello.jpg'} alt="Trello board" style={imgStyle()} />
 
         <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Solution design</h3>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
@@ -106,7 +103,7 @@ function CaseBookShelf({ onBack }) {
           on core habit-building mechanics.
         </p>
 
-        <div style={imgPlaceholder}>Image — Figma prototype</div>
+        <img src={base + 'images/bookshelf/03-figma.jpg'} alt="Figma prototype" style={imgStyle()} />
 
         <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Development</h3>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
@@ -120,8 +117,8 @@ function CaseBookShelf({ onBack }) {
           <li>admin panel for content management</li>
         </ul>
 
-        <div style={imgPlaceholder}>Image — App running</div>
-        <div style={imgPlaceholder}>Image — Progress charts</div>
+        <img src={base + 'images/bookshelf/04-app-list.png'} alt="App running" style={imgStyle()} />
+        <img src={base + 'images/bookshelf/05-app-charts.png'} alt="Progress charts" style={imgStyle()} />
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Outcome</h2>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
