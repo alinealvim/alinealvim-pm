@@ -42,7 +42,7 @@ function Contact() {
           color: 'var(--color-steel)',
           marginBottom: '40px',
         }}>
-          {"I'm always open to new projects, collaborations, or just a good conversation about product and design. Feel free to reach out."}
+          {"I'm open to new opportunities, collaborations, or a good conversation about product."}
         </p>
 
         <a href="mailto:hello@alinealvim.com" className="btn-primary">

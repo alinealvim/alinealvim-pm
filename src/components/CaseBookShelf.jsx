@@ -125,9 +125,13 @@ function CaseBookShelf({ onBack }) {
           The result is a functional product that enables users to track reading progress
           and visualise their habits over time.
         </p>
-        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '48px' }}>
+        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
           The structure prioritises clarity and ease of use, supporting the initial goal
           of reducing friction and reinforcing consistency.
+        </p>
+        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '48px' }}>
+          The project received a final grade of 19/20, with positive feedback highlighting 
+          the clarity of the problem framing and overall product approach.
         </p>
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Key learning</h2>
@@ -146,7 +150,7 @@ function CaseBookShelf({ onBack }) {
         </p>
 
         <button onClick={onBack} className="btn-secondary" style={{ marginTop: '16px' }}>
-          ← Back to Work
+          ← Back to Cases
         </button>
 
       </div>

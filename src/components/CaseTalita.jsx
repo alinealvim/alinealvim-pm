@@ -40,7 +40,7 @@ function CaseTalita({ onBack }) {
           color: 'var(--color-steel)',
           marginBottom: '40px',
         }}>
-          Talita Santos — Brand Strategy & Visual Identity
+          Talita Santos — Product positioning & brand strategy 
         </h1>
 
         <img src={base + 'images/talita/01-cover.jpg'} alt="Talita Santos brand mockup" style={imgStyle()} />
@@ -135,7 +135,7 @@ function CaseTalita({ onBack }) {
         </p>
 
         <button onClick={onBack} className="btn-secondary" style={{ marginTop: '16px' }}>
-          ← Back to Work
+          ← Back to Cases
         </button>
 
       </div>

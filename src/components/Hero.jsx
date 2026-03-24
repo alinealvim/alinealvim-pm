@@ -14,39 +14,52 @@ function Hero() {
         width: '100%',
         textAlign: 'center',
       }}>
+
+        <p style={{
+          fontSize: '16px',
+          fontWeight: '500',
+          color: 'var(--color-sage)',
+          letterSpacing: '0.08em',
+          textTransform: 'uppercase',
+          marginBottom: '12px',
+        }}>
+          Aline Alvim
+        </p>
+
         <h1 style={{
           fontSize: '56px',
           fontWeight: '700',
           color: 'var(--color-steel)',
-          marginBottom: '16px',
+          marginBottom: '20px',
         }}>
-          Hi, I'm Aline Alvim!
+          Product Manager
         </h1>
 
         <h2 style={{
-          fontSize: '32px',
-          fontWeight: '500',
+          fontSize: '28px',
+          fontWeight: '400',
           color: 'var(--color-sage)',
           marginBottom: '24px',
+          lineHeight: '1.3',
         }}>
-          Product Manager — where communication meets technology.
+          I turn complex problems into clear product decisions.
         </h2>
 
         <p style={{
           fontSize: '18px',
           color: 'var(--color-steel)',
           lineHeight: '1.6',
-          marginBottom: '40px',
-          maxWidth: '700px',
+          maxWidth: '600px',
           margin: '0 auto 40px',
         }}>
-          I advocate for the user. I bridge business and engineering.
-          I tell the product's story.
+          Background in communication. Hands-on experience in tech. 
+          I work at the intersection of user, business, and engineering.
         </p>
 
         <a href="#work" className="btn-primary">
-          See My Work
+          See How I Think
         </a>
+
       </div>
     </section>
   )

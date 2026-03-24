@@ -138,7 +138,7 @@ function CaseCroma({ onBack }) {
         </div>
 
         <button onClick={onBack} className="btn-secondary" style={{ marginTop: '48px' }}>
-          ← Back to Work
+          ← Back to Cases
         </button>
 
       </div>

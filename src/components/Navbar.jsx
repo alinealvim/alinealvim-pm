@@ -19,7 +19,7 @@ function Navbar() {
 
       <div style={{ display: 'flex', gap: '32px' }}>
         <a href="#about" className="nav-link">About</a>
-        <a href="#work" className="nav-link">Work</a>
+        <a href="#work" className="nav-link">Cases</a>
         <a href="#contact" className="nav-link">Contact</a>
       </div>
     </nav>

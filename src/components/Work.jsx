@@ -5,27 +5,27 @@ import CaseCroma from './CaseCroma'
 function Work({ activePage, setActivePage }) {
   const cases = [
     {
-      id: 'talita',
-      type: 'Case Study',
-      title: 'Talita Santos',
-      description: 'Brand strategy, market research, and visual identity for an image consulting business. From zero to a complete brand system.',
-    },
-    {
       id: 'bookshelf',
       type: 'Case Study',
       title: 'My Book Shelf',
       description: 'Reading habit tracker built with C# and Blazor. Designed with Scrum methodology, product backlog, risk management, and a Figma prototype.',
     },
     {
+      id: 'talita',
+      type: 'Case Study',
+      title: 'Talita Santos',
+      description: 'Product positioning and brand strategy for an image consulting business. From zero to a complete brand system.',
+    },
+    {
       id: 'croma',
       type: 'Web Development',
       title: 'Croma — Client Sites',
-      description: 'Three websites built in HTML, CSS, JavaScript and Bootstrap with PHP forms. Developed during internship and as a freelancer.',
+      description: 'Three websites developed during an internship in Porto, focused on delivering functional, user-facing products for real clients.',
     },
   ]
 
-  if (activePage === 'talita') return <CaseTalita onBack={() => setActivePage(null)} />
   if (activePage === 'bookshelf') return <CaseBookShelf onBack={() => setActivePage(null)} />
+  if (activePage === 'talita') return <CaseTalita onBack={() => setActivePage(null)} />
   if (activePage === 'croma') return <CaseCroma onBack={() => setActivePage(null)} />
   
   return (
@@ -43,7 +43,7 @@ function Work({ activePage, setActivePage }) {
           color: 'var(--color-steel)',
           marginBottom: '16px',
         }}>
-          Work
+          Cases
         </h2>
 
         <p style={{
@@ -53,8 +53,7 @@ function Work({ activePage, setActivePage }) {
           marginBottom: '48px',
           maxWidth: '700px',
         }}>
-          A selection of projects that represent my journey — from brand
-          strategy and product thinking, to technical web development.
+          Projects that show how I think, from defining a problem to shipping a solution.
         </p>
 
         <div style={{

@@ -23,7 +23,7 @@ function About() {
           color: 'var(--color-steel)',
           marginBottom: '24px',
         }}>
-          I spent over a decade working with words — content production, editorial
+          I spent over a decade working with words: content production, editorial
           revision, communication strategy. I was always the person asking:
           "who is going to read this? What does this person need to feel?"
         </p>
@@ -43,11 +43,11 @@ function About() {
           color: 'var(--color-steel)',
           marginBottom: '24px',
         }}>
-          I moved countries, changed career paths, studied information systems
-          programming, learned to code — and realised that what interests me
-          most is not writing the code or writing the text. It's understanding
-          the problem, advocating for the user, and making sure the product
-          makes sense for the people who use it.
+          I moved countries, changed career paths, studied information systems 
+          programming, learned to code. And realised that what interests me 
+          most is not writing the code or writing the text. It's understanding 
+          the problem, advocating for the user, and making sure the product makes 
+          sense for the people who use it.
         </p>
 
         <p style={{
@@ -56,11 +56,8 @@ function About() {
           color: 'var(--color-steel)',
           marginBottom: '24px',
         }}>
-          I have a background in communication, technical literacy in front-end
-          development (React, Angular, Figma), and a way of thinking that
-          bridges both worlds. I'm building a career in Product Management —
-          specifically where communication clarity and structured thinking make
-          a real difference.
+          I have a background in communication and technical literacy in 
+          front-end development. I'm building a career in Product Management.
         </p>
 
         <p style={{
