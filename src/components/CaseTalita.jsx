@@ -1,4 +1,14 @@
+import { useEffect } from 'react' 
+
 function CaseTalita({ onBack }) {
+
+  useEffect(() => {
+    const workSection = document.getElementById('work')
+    if (workSection) {
+      workSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }, [])
+
   const base = import.meta.env.BASE_URL
 
   const imgStyle = (objectFit = 'contain') => ({
@@ -11,7 +21,7 @@ function CaseTalita({ onBack }) {
   })
 
   return (
-    <section style={{
+    <section id="work" style={{
       backgroundColor: 'var(--color-champagne)',
       padding: 'var(--section-padding)',
       paddingTop: '120px',

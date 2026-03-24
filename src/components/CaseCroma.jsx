@@ -1,4 +1,14 @@
+import { useEffect } from 'react' 
+
 function CaseCroma({ onBack }) {
+  
+  useEffect(() => {
+    const workSection = document.getElementById('work')
+    if (workSection) {
+      workSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }, [])
+    
   const sites = [
     {
       id: 'clinica',
@@ -30,7 +40,7 @@ function CaseCroma({ onBack }) {
   ]
 
   return (
-    <section style={{
+    <section id="work" style={{
       backgroundColor: 'var(--color-champagne)',
       padding: 'var(--section-padding)',
       paddingTop: '120px',
