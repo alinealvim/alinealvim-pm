@@ -53,7 +53,7 @@ function CaseTalita({ onBack }) {
           Talita Santos — Product positioning & brand strategy 
         </h1>
 
-        <img src={base + 'images/talita/01-cover.jpg'} alt="Talita Santos brand mockup" style={imgStyle()} />
+        <img src='images/talita/01-cover.jpg' alt="Talita Santos brand mockup" style={imgStyle()} />
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Overview</h2>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
