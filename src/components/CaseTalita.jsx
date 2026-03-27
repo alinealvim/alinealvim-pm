@@ -9,7 +9,7 @@ function CaseTalita({ onBack }) {
     }
   }, [])
 
-  const base = import.meta.env.BASE_URL
+
 
   const imgStyle = (objectFit = 'contain') => ({
     width: '100%',
@@ -116,7 +116,7 @@ function CaseTalita({ onBack }) {
           positioning choice, designed to communicate credibility, personalisation, and clarity.
         </p>
 
-        <img src={base + 'images/talita/02-brandboard.jpg'} alt="Talita Santos brand board" style={imgStyle()} />
+        <img src='images/talita/02-brandboard.jpg' alt="Talita Santos brand board" style={imgStyle()} />
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Outcome</h2>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
@@ -133,9 +133,9 @@ function CaseTalita({ onBack }) {
           communication and service delivery.
         </p>
 
-        <img src={base + 'images/talita/03-report-kibbe.jpg'} alt="Consulting report — Kibbe body type" style={imgStyle()} />
-        <img src={base + 'images/talita/04-report-guidelines.jpg'} alt="Consulting report — style guidelines" style={imgStyle()} />
-        <img src={base + 'images/talita/05-report-final.jpg'} alt="Talita Santos consulting report" style={imgStyle()} />
+        <img src='images/talita/03-report-kibbe.jpg' alt="Consulting report — Kibbe body type" style={imgStyle()} />
+        <img src='images/talita/04-report-guidelines.jpg' alt="Consulting report — style guidelines" style={imgStyle()} />
+        <img src= 'images/talita/05-report-final.jpg' alt="Talita Santos consulting report" style={imgStyle()} />
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Key learning</h2>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '48px' }}>

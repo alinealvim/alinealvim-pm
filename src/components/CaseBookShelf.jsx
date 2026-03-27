@@ -9,7 +9,7 @@ function CaseBookShelf({ onBack }) {
     }
   }, [])
     
-  const base = import.meta.env.BASE_URL
+  
 
   const imgStyle = (objectFit = 'contain') => ({
     width: '100%',
@@ -53,7 +53,7 @@ function CaseBookShelf({ onBack }) {
           My Book Shelf — Reading Habit Tracker
         </h1>
 
-        <img src={base + 'images/bookshelf/01-app-screenshot.png'} alt="App screenshot" style={imgStyle()} />
+        <img src='images/bookshelf/01-app-screenshot.png' alt="App screenshot" style={imgStyle()} />
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Overview</h2>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
@@ -100,7 +100,7 @@ function CaseBookShelf({ onBack }) {
           <li>risk mapping (timeline, technical complexity, continuity)</li>
         </ul>
 
-        <img src={base + 'images/bookshelf/02-trello.jpg'} alt="Trello board" style={imgStyle()} />
+        <img src='images/bookshelf/02-trello.jpg' alt="Trello board" style={imgStyle()} />
 
         <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Solution design</h3>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
@@ -113,7 +113,7 @@ function CaseBookShelf({ onBack }) {
           on core habit-building mechanics.
         </p>
 
-        <img src={base + 'images/bookshelf/03-figma.jpg'} alt="Figma prototype" style={imgStyle()} />
+        <img src='images/bookshelf/03-figma.jpg' alt="Figma prototype" style={imgStyle()} />
 
         <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Development</h3>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
@@ -127,8 +127,8 @@ function CaseBookShelf({ onBack }) {
           <li>admin panel for content management</li>
         </ul>
 
-        <img src={base + 'images/bookshelf/04-app-list.png'} alt="App running" style={imgStyle()} />
-        <img src={base + 'images/bookshelf/05-app-charts.png'} alt="Progress charts" style={imgStyle()} />
+        <img src='images/bookshelf/04-app-list.png' alt="App running" style={imgStyle()} />
+        <img src='images/bookshelf/05-app-charts.png' alt="Progress charts" style={imgStyle()} />
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Outcome</h2>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
