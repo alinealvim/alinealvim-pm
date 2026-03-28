@@ -26,13 +26,8 @@ function Hero() {
           Aline Alvim
         </p>
 
-        <h1 style={{
-          fontSize: '56px',
-          fontWeight: '700',
-          color: 'var(--color-steel)',
-          marginBottom: '20px',
-        }}>
-          Product Manager
+        <h1 style={{ fontSize: '56px', fontWeight: '700', color: 'var(--color-steel)', marginBottom: '12px' }}>
+            Associate Product Manager
         </h1>
 
         <h2 style={{
@@ -42,7 +37,7 @@ function Hero() {
           marginBottom: '24px',
           lineHeight: '1.3',
         }}>
-          I turn complex problems into clear product decisions.
+          Product-minded professional transitioning into Product Management.
         </h2>
 
         <p style={{
