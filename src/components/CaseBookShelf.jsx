@@ -53,6 +53,16 @@ function CaseBookShelf({ onBack }) {
           My Book Shelf — Reading Habit Tracker
         </h1>
 
+        <a 
+            href="https://github.com/alinealvim/ProjectMyBookShelf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-secondary"
+            style={{ marginBottom: '32px', display: 'inline-block' }}
+          >
+            View Code on GitHub
+        </a>
+
         <img src='images/bookshelf/01-app-screenshot.png' alt="App screenshot" style={imgStyle()} />
 
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Overview</h2>
@@ -61,7 +71,7 @@ function CaseBookShelf({ onBack }) {
           users build and maintain a consistent reading routine.
         </p>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '48px' }}>
-          The project was developed as part of a Technical Specialist programme in Information
+          Developed as part of a Technical Specialist programme in Information
           Systems Programming, with a focus on combining product thinking and technical execution.
         </p>
 
@@ -79,7 +89,7 @@ function CaseBookShelf({ onBack }) {
 
         <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Problem definition & product framing</h3>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
-          The core problem identified was not lack of interest in reading, but lack of continuity.
+          The core problem identified was not lack of interest in reading – but lack of continuity.
           Based on this, the product was framed around three key drivers:
         </p>
         <ul style={{ fontSize: '17px', lineHeight: '2', color: 'var(--color-steel)', marginBottom: '32px', paddingLeft: '24px' }}>
@@ -103,17 +113,23 @@ function CaseBookShelf({ onBack }) {
         <img src='images/bookshelf/02-trello.jpg' alt="Trello board" style={imgStyle()} />
 
         <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Solution design</h3>
-        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
+        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '32px' }}>
           To ensure alignment between functionality and user experience, I designed the system
           architecture in three layers (presentation, business logic, data) and created a Figma
           prototype to validate flows before development.
         </p>
-        <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '32px' }}>
-          Key product decisions included prioritising simplicity over feature volume and focusing
-          on core habit-building mechanics.
-        </p>
 
-        <img src='images/bookshelf/03-figma.jpg' alt="Figma prototype" style={imgStyle()} />
+         <img src='images/bookshelf/03-figma.jpg' alt="Figma prototype" style={imgStyle()} />
+ 
+        <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>
+          Key product decisions
+        </h3>
+        <ul style={{ fontSize: '17px', lineHeight: '2', color: 'var(--color-steel)', marginBottom: '32px', paddingLeft: '24px' }}>
+          <li>Prioritised simplicity over feature expansion to reduce friction and support habit formation</li>
+          <li>Focused on individual tracking instead of social features to avoid distraction from the core goal</li>
+          <li>Delayed advanced features (e.g., recommendations) to maintain a clear MVP scope</li>
+        </ul>
+
 
         <h3 style={{ fontSize: '18px', fontWeight: '500', color: 'var(--color-terracotta)', marginBottom: '12px' }}>Development</h3>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
@@ -133,7 +149,7 @@ function CaseBookShelf({ onBack }) {
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Outcome</h2>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
           The result is a functional product that enables users to track reading progress
-          and visualise their habits over time.
+          and visualise their habits over time, supporting the goal of reinforcing consistency.
         </p>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
           The structure prioritises clarity and ease of use, supporting the initial goal
@@ -154,6 +170,16 @@ function CaseBookShelf({ onBack }) {
           It also showed the value of incorporating automated testing and user feedback
           earlier in the process to improve product quality and iteration speed.
         </p>
+
+        <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>
+          What I would validate next
+        </h2>
+
+        <ul style={{ fontSize: '17px', lineHeight: '2', color: 'var(--color-steel)', marginBottom: '48px', paddingLeft: '24px' }}>
+          <li>Whether progress visualisation effectively increases user consistency over time</li>
+          <li>Which features users engage with most (tracking vs. charts)</li>
+          <li>Whether reminders or notifications would improve habit continuity</li>
+        </ul>
 
         <p style={{ fontSize: '14px', color: 'var(--color-sage)', marginBottom: '48px' }}>
           Stack: C#, Blazor Web App, SQL Server, Entity Framework Core, Bootstrap, Figma, Trello, GitHub
