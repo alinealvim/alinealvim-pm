@@ -139,7 +139,7 @@ function CaseBookShelf({ onBack }) {
         <ul style={{ fontSize: '17px', lineHeight: '2', color: 'var(--color-steel)', marginBottom: '48px', paddingLeft: '24px' }}>
           <li>book tracking with status management (To Read, Reading, Read)</li>
           <li>reading progress tracking (pages and dates)</li>
-          <li>data visualisation through charts</li>
+          <li>data visualization through charts</li>
           <li>admin panel for content management</li>
         </ul>
 
@@ -149,7 +149,7 @@ function CaseBookShelf({ onBack }) {
         <h2 style={{ fontSize: '24px', fontWeight: '500', color: 'var(--color-steel)', marginBottom: '16px' }}>Outcome</h2>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
           The result is a functional product that enables users to track reading progress
-          and visualise their habits over time, supporting the goal of reinforcing consistency.
+          and visualize their habits over time, supporting the goal of reinforcing consistency.
         </p>
         <p style={{ fontSize: '17px', lineHeight: '1.7', color: 'var(--color-steel)', marginBottom: '16px' }}>
           The structure prioritises clarity and ease of use, supporting the initial goal
@@ -176,7 +176,7 @@ function CaseBookShelf({ onBack }) {
         </h2>
 
         <ul style={{ fontSize: '17px', lineHeight: '2', color: 'var(--color-steel)', marginBottom: '48px', paddingLeft: '24px' }}>
-          <li>Whether progress visualisation effectively increases user consistency over time</li>
+          <li>Whether progress visualization effectively increases user consistency over time</li>
           <li>Which features users engage with most (tracking vs. charts)</li>
           <li>Whether reminders or notifications would improve habit continuity</li>
         </ul>
