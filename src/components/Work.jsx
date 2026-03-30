@@ -8,19 +8,19 @@ function Work({ activePage, setActivePage }) {
       id: 'bookshelf',
       type: 'Case Study',
       title: 'My Book Shelf',
-      description: 'Reading habit tracker built with C# and Blazor. Designed with Scrum methodology, product backlog, risk management, and a Figma prototype.',
+      description: 'Helping users build a consistent reading habit — designed with product thinking, built end-to-end.',
     },
     {
       id: 'talita',
       type: 'Case Study',
       title: 'Talita Santos',
-      description: 'Product positioning and brand strategy for an image consulting business. From zero to a complete brand system.',
+      description: 'A client with no defined audience, positioning, or brand direction. From zero to a complete brand system.',
     },
     {
       id: 'croma',
       type: 'Web Development',
       title: 'Croma — Client Sites',
-      description: 'Three websites developed during an internship in Porto, focused on delivering functional, user-facing products for real clients.',
+      description: 'Websites developed during an internship in Porto, focused on delivering functional, user-facing products for real clients.',
     },
   ]
 

@@ -37,7 +37,7 @@ function Hero() {
           marginBottom: '24px',
           lineHeight: '1.3',
         }}>
-          Product-minded professional transitioning into Product Management.
+          From communication and code to Product — without losing either.
         </h2>
 
         <p style={{
