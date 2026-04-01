@@ -1,6 +1,7 @@
 import CaseTalita from './CaseTalita'
 import CaseBookShelf from './CaseBookShelf'
 import CaseCroma from './CaseCroma'
+import CaseAcademic from './CaseAcademic'
 
 function Work({ activePage, setActivePage }) {
   const cases = [
@@ -22,11 +23,18 @@ function Work({ activePage, setActivePage }) {
       title: 'Croma — Client Sites',
       description: 'Websites developed during an internship in Porto, focused on delivering functional, user-facing products for real clients.',
     },
+    {
+      id: 'academic',
+      type: 'Academic Project',
+      title: 'Bridging the Gap',
+      description: 'A subscription-based consulting model designed to connect independent marketing professionals with small businesses during the COVID-19 crisis.',
+    },
   ]
 
   if (activePage === 'bookshelf') return <CaseBookShelf onBack={() => setActivePage(null)} />
   if (activePage === 'talita') return <CaseTalita onBack={() => setActivePage(null)} />
   if (activePage === 'croma') return <CaseCroma onBack={() => setActivePage(null)} />
+  if (activePage === 'academic') return <CaseAcademic onBack={() => setActivePage(null)} />
   
   return (
     <section id="work" style={{
