@@ -23,7 +23,7 @@ function About() {
           color: 'var(--color-steel)',
           marginBottom: '24px',
         }}>
-          I spent 13 years working with words: content production, editorial
+          I spent over a decade working with words: content production, editorial
           revision, communication strategy. I was always the person asking:
           "who is going to read this? What does this person need to feel?"
         </p>
