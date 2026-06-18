@@ -10,7 +10,7 @@ function Footer() {
         fontSize: '14px',
         color: 'var(--color-stell)',
       }}>
-        © 2026 Aline Alvim. All Rights Reserved.
+        Designed & built by Aline Alvim © 2026
       </p>
     </footer>
   )
